@@ -21,7 +21,7 @@ mongoose
 const corsOptions = {
   //Trusted frontend
   origin: [
-    "https://66945c8033078dd8bd24dde6--regal-kangaroo-2cab09.netlify.app/login",
+    "https://66945c8033078dd8bd24dde6--regal-kangaroo-2cab09.netlify.app/",
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
