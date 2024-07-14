@@ -23,6 +23,8 @@ const corsOptions = {
   origin: [
     "https://6694554d9c1981ef7f6b3eeb--regal-kangaroo-2cab09.netlify.app/",
   ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
 };
 app.use(cors(corsOptions));
 
