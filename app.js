@@ -20,7 +20,9 @@ mongoose
 //Cors configuration
 const corsOptions = {
   //Trusted frontend
-  origin: ["http://localhost:5173"],
+  origin: [
+    "https://6694554d9c1981ef7f6b3eeb--regal-kangaroo-2cab09.netlify.app/",
+  ],
 };
 app.use(cors(corsOptions));
 
