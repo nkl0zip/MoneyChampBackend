@@ -18,18 +18,19 @@ mongoose
   .catch((e) => console.log(e));
 
 //Cors configuration
-const corsOptions = {
-  //Trusted frontend
-  origin: [
-    "https://66945c8033078dd8bd24dde6--regal-kangaroo-2cab09.netlify.app/",
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
-};
-app.use(cors(corsOptions));
+//const corsOptions = {
+//  //Trusted frontend
+//  origin: [
+//    "https://66945c8033078dd8bd24dde6--regal-kangaroo-2cab09.netlify.app/",
+//  ],
+//  methods: ["GET", "POST", "PUT", "DELETE"],
+//  credentials: true,
+//};
+//app.use(cors(corsOptions));
 
 //MiddleWares
 app.use(express.json());
+app.use(cors());
 
 //Routes
 app.use("/", userRouter);
